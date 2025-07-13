@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SimpleHotelManagementSystem
+{
+    class Guest   // Represents a hotel guest
+    {
+
+
+
+        // Auto-implemented property for Guest Name with validation
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set
+            {
+                if (!string.IsNullOrWhiteSpace(value) && value.Length >= 3)
+                    name = value;
+                else
+                    throw new ArgumentException("Name must be at least 3 characters.");
+            }
+        }
+
+    }
+}

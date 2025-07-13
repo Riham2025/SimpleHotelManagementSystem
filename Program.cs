@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
 
-            Room room1 = new Room(100);
+            Room room1 = new Room(102);
 
 
             Console.WriteLine($"Room Number: {room1.RoomNumber}, IsBooked: {room1.IsBooked}");
