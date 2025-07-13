@@ -17,7 +17,7 @@ namespace SimpleHotelManagementSystem
         private bool isBooked; //They are not directly accessible from outside the class (because of private).
 
         // Static field to track total rooms
-        private static int roomCount = 0;
+        private static int roomCount = 0; //This is a static field — shared by all Room objects.
 
 
 
