@@ -25,5 +25,19 @@ namespace SimpleHotelManagementSystem
             }
         }
 
+        // Auto-implemented property for National ID with validation
+    private string nationalID;
+    public string NationalID
+    {
+        get { return nationalID; }
+        set
+        {
+            if (!string.IsNullOrWhiteSpace(value))
+                nationalID = value;
+            else
+                throw new ArgumentException("National ID cannot be empty.");
+        }
+    }
+
     }
 }
