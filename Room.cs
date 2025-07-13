@@ -16,6 +16,10 @@ namespace SimpleHotelManagementSystem
         private int roomNumber; //These are private fields — internal variables that store the room’s number and whether it is booked.
         private bool isBooked; //They are not directly accessible from outside the class (because of private).
 
+        // Static field to track total rooms
+        private static int roomCount = 0;
+
+
 
     }
 }
