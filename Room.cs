@@ -36,6 +36,12 @@ namespace SimpleHotelManagementSystem
             }
         }
 
+        // Property to get booking status
+        public bool IsBooked
+        {
+            get { return isBooked; }
+        }
+
 
 
 
