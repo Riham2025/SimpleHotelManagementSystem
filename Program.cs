@@ -19,6 +19,8 @@
             
                 
                 Console.WriteLine($"Guest Name: {guest1.Name}, National ID: {guest1.NationalID} ,  Password : {guest1.Password}");
+
+
             
 
         }
