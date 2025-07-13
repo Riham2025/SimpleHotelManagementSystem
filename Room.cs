@@ -58,6 +58,11 @@ namespace SimpleHotelManagementSystem
             isBooked = true; //A method that marks the room as booked by setting isBooked = true
         }
 
+        // Method to free the room
+        public void Free()
+        {
+            isBooked = false; // A method that marks the room as available by setting isBooked = false.
+        }
 
 
 
