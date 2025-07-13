@@ -18,6 +18,12 @@ namespace SimpleHotelManagementSystem
 
         // Static field to track total rooms
         private static int roomCount = 0; //This is a static field — shared by all Room objects.
+                                          //  It tracks how many rooms have been created in total.
+                                          //It starts at 0 and increases when a room is created.
+
+        // Property to get room number
+        public int RoomNumber // This is a public property to expose the private roomNumber
+        //Properties allow controlled access to fields (using get and set).
 
 
 
