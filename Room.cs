@@ -65,7 +65,13 @@ namespace SimpleHotelManagementSystem
         }
 
 
-
-
+        // Static method to get total room count
+        public static int GetRoomCount() //A static method that returns the value of the shared static field roomCount.
+        {
+            return roomCount;
+        }
     }
+
+
+}
 }
