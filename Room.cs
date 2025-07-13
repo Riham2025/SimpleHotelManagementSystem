@@ -10,6 +10,10 @@ namespace SimpleHotelManagementSystem
     public class Room // Declares a public class named Room that can be used anywhere in the project
 
     {
+        
+        // Private fields
+        private int roomNumber;
+        private bool isBooked;
 
 
     }
