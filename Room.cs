@@ -39,7 +39,7 @@ namespace SimpleHotelManagementSystem
         // Property to get booking status
         public bool IsBooked // A read-only public property to know if the room is booked.
         {
-            get { return isBooked; }
+            get { return isBooked; } //There is no set, so you can't change it from outside.
         }
 
 
