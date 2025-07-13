@@ -61,8 +61,16 @@ namespace SimpleHotelManagementSystem
             nationalID = "000000";
         }
 
-
+        // Overloaded constructor to initialize data
+        public Guest(string name, string nationalID)
+        {
+            Name = name;             // triggers validation
+            NationalID = nationalID; // triggers validation
+        }
     }
+
+
+}
 
 
 
