@@ -39,5 +39,12 @@ namespace SimpleHotelManagementSystem
         }
     }
 
+        // Private field for storing password (write-only)
+        private string password;
+
+
     }
+
+
+
 }
