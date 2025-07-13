@@ -14,5 +14,13 @@ namespace SimpleHotelManagementSystem
 
         // Read-only property for booking time
         public DateTime BookingTime { get; private set; }
+
+
+        // Constructor that takes Room and Guest
+        public Booking(Room room, Guest guest)
+        {
+            this.room = room;
+            this.guest = guest;
+        }
     }
 }
