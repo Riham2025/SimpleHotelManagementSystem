@@ -42,6 +42,9 @@ namespace SimpleHotelManagementSystem
             get { return isBooked; } //There is no set, so you can't change it from outside.
         }
 
+        // Constructor with parameter
+         public Room(int number) //A constructor runs when you create a new Room object.
+            //  It accepts one argument number, which is the room number.
 
 
 
