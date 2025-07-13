@@ -44,7 +44,21 @@ namespace SimpleHotelManagementSystem
 
         // Constructor with parameter
          public Room(int number) //A constructor runs when you create a new Room object.
-            //  It accepts one argument number, which is the room number.
+                                 //  It accepts one argument number, which is the room number.
+        {
+            RoomNumber = number; //Assigns the room number (with validation from the property).
+            isBooked = false; //Sets isBooked to false (room is available by default).
+            roomCount++; // Increments roomCount to track how many rooms have been created.
+
+        }
+
+        // Method to book the room
+        public void Book()
+        {
+            isBooked = true; //A method that marks the room as booked by setting isBooked = true
+        }
+
+
 
 
 
