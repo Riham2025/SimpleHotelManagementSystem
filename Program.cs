@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            Room room1 = new Room(100);
+
+
+            Console.WriteLine($"Room Number: {room1.RoomNumber}, IsBooked: {room1.IsBooked}");
+            room1.Book();
+            Console.WriteLine($"After booking - IsBooked: {room1.IsBooked}");
+
         }
     }
 }
