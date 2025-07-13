@@ -54,6 +54,13 @@ namespace SimpleHotelManagementSystem
             }
         }
 
+        // Default constructor
+        public Guest()
+        {
+            name = "Unknown";
+            nationalID = "000000";
+        }
+
 
     }
 
