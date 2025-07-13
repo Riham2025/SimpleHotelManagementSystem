@@ -42,6 +42,18 @@ namespace SimpleHotelManagementSystem
         // Private field for storing password (write-only)
         private string password;
 
+        // Write-only property for Password (cannot read from outside)
+        public string Password
+        {
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                    password = value;
+                else
+                    throw new ArgumentException("Password cannot be empty.");
+            }
+        }
+
 
     }
 
