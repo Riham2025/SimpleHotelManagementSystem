@@ -23,7 +23,19 @@ namespace SimpleHotelManagementSystem
 
         // Property to get room number
         public int RoomNumber // This is a public property to expose the private roomNumber
-        //Properties allow controlled access to fields (using get and set).
+                              //Properties allow controlled access to fields (using get and set).
+
+        {
+            get { return roomNumber; }  //get: Allows other code to read the room number.
+            private set  //private set: Only the class itself can set the value.
+            {
+                if (value >= 100) // Inside set, there is validation: room number must be 100 or more, or it throws an error.
+                    roomNumber = value;
+                else
+                    throw new ArgumentException("Room number must be 100 or greater.");
+            }
+        }
+
 
 
 
