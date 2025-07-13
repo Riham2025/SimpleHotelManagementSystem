@@ -45,6 +45,7 @@ namespace SimpleHotelManagementSystem
         // Write-only property for Password (cannot read from outside)
         public string Password
         {
+            get { return password; }
             set
             {
                 if (!string.IsNullOrEmpty(value))
@@ -59,13 +60,19 @@ namespace SimpleHotelManagementSystem
         {
             name = "Unknown";
             nationalID = "000000";
+            password = "defaultPassword"; // Default password, can be changed later
         }
 
         // Overloaded constructor to initialize data
-        public Guest(string name, string nationalID)
+        public Guest(string name, string nationalID , string password)
         {
-            Name = name;             // triggers validation
-            NationalID = nationalID; // triggers validation
+            this.Name = name;             // triggers validation
+            this.NationalID = nationalID; // triggers validation
+            this.Password = password;
+
+            Console.WriteLine("Guest created successfully.");
+
+
         }
     }
 
@@ -74,4 +81,4 @@ namespace SimpleHotelManagementSystem
 
 
 
-}
+
