@@ -11,5 +11,8 @@ namespace SimpleHotelManagementSystem
     {
         private Room room;
         private Guest guest;
+
+        // Read-only property for booking time
+        public DateTime BookingTime { get; private set; }
     }
 }
